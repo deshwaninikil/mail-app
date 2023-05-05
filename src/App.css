@@ -1,0 +1,126 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+button {
+  background-color: initial;
+  border: none;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7effe;
+  min-height: 100vh;
+  padding: 90px 15px 15px;
+  position: fixed;
+  width: 15%;
+}
+.navLink {
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+}
+.navLink:hover {
+  font-size: 18px;
+}
+.inboxContent {
+  display: flex;
+  justify-content: space-between;
+}
+.mailDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.unreadHeading {
+  text-align: left;
+  padding-left: 10px;
+}
+.mailContent {
+  list-style: none;
+  padding: 10px;
+  text-align: left;
+}
+.mailDetails .viewDetail {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+.reportSpamBtn {
+  color: orange;
+}
+.markReadBtn {
+  color: green;
+}
+.trashMailBtn {
+  color: red;
+}
+.mailBox {
+  left: 15%;
+  position: relative;
+  width: 85%;
+}
+.mailDeatls {
+  background-color: #f1f1f0;
+  border-radius: 20px;
+  margin: 40px 70px;
+  padding: 20px;
+  text-align: left;
+}
+.commonPara {
+  margin: 0 0 15px;
+}
+.filterBox {
+  border-radius: 20px;
+  font-size: small;
+  margin: 0 50px;
+  padding: 20px 0;
+  text-align: left;
+}
+legend {
+  font-size: large;
+}
+label {
+  margin: 0 30px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
