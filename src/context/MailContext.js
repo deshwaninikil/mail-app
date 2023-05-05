@@ -81,13 +81,13 @@ export const MailProvider = ({ children }) => {
     isStarredValue: false,
   };
   const [mailState, mailDispatch] = useReducer(reducerFunction, initialState);
-  const { allMail, spam, trash } = mailState;
+  const { allMail } = mailState;
   const UnreadMessage = allMail.reduce(
     (acc, curr) => (curr.unread ? acc + 1 : acc),
     0
   );
 
-  console.log("UnreadMessage", allMail);
+  // console.log("UnreadMessage", allMail);
   return (
     <>
       <MailContext.Provider value={{ mailState, mailDispatch, UnreadMessage }}>

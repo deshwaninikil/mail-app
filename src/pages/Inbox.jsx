@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useContext } from "react";
 import { MailContext } from "../context/MailContext";
 import { Link } from "react-router-dom";
@@ -35,11 +36,11 @@ export const Inbox = () => {
           Show Starred Mails
         </label>
       </fieldset>
+      <h2 className="unreadHeading">Unread:{UnreadMessage}</h2>
       <ul>
-        <h2 className="unreadHeading">Unread:{UnreadMessage}</h2>
         {currentMails.map(({ mId, subject, content, unread, isStarred }) => (
-          <>
-            <li key={mId - subject} className="mailContent">
+          <React.Fragment key={mId}>
+            <li className="mailContent">
               <div className="inboxContent">
                 <h4>{subject}</h4>
                 <button
@@ -93,7 +94,7 @@ export const Inbox = () => {
               </div>
             </li>
             <hr />
-          </>
+          </React.Fragment>
         ))}
       </ul>
     </>

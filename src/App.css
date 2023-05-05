@@ -45,8 +45,8 @@ button {
   justify-content: space-between;
 }
 .unreadHeading {
-  text-align: left;
-  padding-left: 10px;
+  /* text-align: left;
+  padding-left: 10px; */
 }
 .mailContent {
   list-style: none;
